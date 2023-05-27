@@ -1,0 +1,177 @@
+﻿@using tema2mvc.Services
+@using tema2mvc.Models
+@model EmployeePanelModel
+@inject IDataAccess<MenuItemDAO> _items
+@{
+    ViewData["Title"] = "Employee Panel";
+}
+<!doctype html>
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+        <style>
+            td {
+                border: 1px solid #F0F0F0;
+                padding: 0 5px;
+            }
+            p {
+                margin: 20px 0 5px 0;
+            }
+            table {
+                margin-bottom: 20px;
+            }
+            #newOrderDiv {
+                margin-top: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>@ViewData["Title"]</h1>
+        <p>Found @Model.Orders.Count() orders.</p>
+        <table>
+            @foreach (OrderDAO order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.Time - @order.OrderStatus.ToString()</td>
+                    <td>
+                        <button onclick="selectOrder('@order.Id.ToString()')">Select</button>
+                    </td>
+                    <td>
+                        <button onclick="removeOrder('@order.Id.ToString()')">Delete</button>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        @if (Model.SelectedOrder is not null)
+        {
+            string orderId = Model.SelectedOrder.Id.ToString();
+            <p>Selected Order (@Model.SelectedOrder.Time):</p>
+                <table>
+                    @foreach (var item in Model.SelectedOrder.Items)
+                    {
+                        var menuItem = _items.GetById(item.Key);
+                        if (menuItem is null)
+                            continue;
+
+                        <tr>
+                            <td>@menuItem.Name</td>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+            </table>
+
+            <div>
+                <span>Set status:</span><br>
+                <button onclick="updateOrderStatus('@orderId', 1)">Preparing</button>
+                <button onclick="updateOrderStatus('@orderId', 2)">Ready</button>
+            </div>
+
+            <p><a href="/employee/downloadorder?id=@orderId&type=excel">Download Excel</a></p>
+            <p><a href="/employee/downloadorder?id=@orderId&type=csv">Download Excel</a></p>
+        }
+
+        <div id="newOrderDiv">
+            <button onclick="newOrder()">Create new order</button>
+            <table id="newOrderTable">
+            </table>
+        </div>
+
+        <p>Menu items:</p>
+        <table>
+            @foreach (var menuItem in Model.MenuItems)
+            {
+                <tr data-itemid="@menuItem.Id.ToString()">
+                    <td>@menuItem.Name</td>
+                    <td>@menuItem.Stock</td>
+                    <td>@menuItem.Price</td>
+                    <td>
+                        <button onclick="addToOrder('@menuItem.Id.ToString()')">Add to order</button>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript">
+            function selectOrder(orderId) {
+                window.location.href = `/employee/vieworder/${orderId}`;
+            }
+
+            function newOrder() {
+                let table = $("#newOrderTable");
+                let items = table.children("tr");
+                if (items.length === 0)
+                    return;
+
+                let itemsJson = {};
+                for (let i = 0; i < items.length; i++) {
+                    let item = $(items[i]);
+                    let itemQty = item.children("td:nth-child(3)").html();
+                    itemsJson[item.attr("data-id")] = itemQty * 1;
+                }
+
+                $.ajax({
+                    url: '/employee/addorder',
+                    type: 'post',
+                    dataType: 'json',
+                    data: itemsJson,
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function addToOrder(itemId) {
+                $.ajax({
+                    url: `/employee/getitemdetails?id=${itemId}`,
+                    type: 'get',
+                    dataType: 'json',
+                    success: function(data) {
+                        addItemToOrder(data);
+                    }
+                });
+            }
+
+            function addItemToOrder(item) {
+                let tableItem = $("#newOrderTable").children(`tr[data-id="${item.id}"]`);
+                if (tableItem.length === 0) {
+                    let elem = $(`<tr data-id="${item.id}"><td>${item.name}</td><td>${item.price}</td><td>1</td>`);
+                    $("#newOrderTable").append(elem);
+                    return;
+                }
+
+                let qtyElem = tableItem.children("td:nth-child(3)");
+                let currentQty = qtyElem.html() * 1;
+                if (currentQty == item.stock)
+                    return;
+
+                qtyElem.html(currentQty + 1);
+            }
+
+            function removeOrder(orderId) {
+                $.ajax({
+                    url: `/employee/removeorder?order=${orderId}`,
+                    type: 'delete',
+                    dataType: 'json',
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function updateOrderStatus(orderId, status) {
+                $.ajax({
+                    url: `/employee/updateorderstatus?order=${orderId}&status=${status}`,
+                    type: 'patch',
+                    dataType: 'json',
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+        </script>
+        </body>
+</html>
+

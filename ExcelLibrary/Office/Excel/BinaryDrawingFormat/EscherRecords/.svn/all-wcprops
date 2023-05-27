@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/45/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords
+END
+MsofbtBlipBitmapJPEG.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipBitmapJPEG.cs
+END
+MsofbtClientTextbox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtClientTextbox.cs
+END
+MsofbtDgContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtDgContainer.cs
+END
+MsofbtBstoreContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBstoreContainer.cs
+END
+MsofbtSplitMenuColors.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSplitMenuColors.cs
+END
+MsofbtColorMRU.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtColorMRU.cs
+END
+MsofbtOPT.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtOPT.cs
+END
+MsofbtColorScheme.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtColorScheme.cs
+END
+MsofbtOleObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtOleObject.cs
+END
+MsofbtClientData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtClientData.cs
+END
+MsofbtBlipMetafilePICT.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipMetafilePICT.cs
+END
+MsofbtBlipEnd.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipEnd.cs
+END
+MsofbtSolverContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSolverContainer.cs
+END
+MsofbtSp.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSp.cs
+END
+MsofbtContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtContainer.cs
+END
+MsofbtRegroupItems.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtRegroupItems.cs
+END
+MsofbtBlipMetafileEMF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipMetafileEMF.cs
+END
+MsofbtBlip.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlip.cs
+END
+MsofbtBlipBitmapPNG.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipBitmapPNG.cs
+END
+MsofbtDg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtDg.cs
+END
+MsofbtCalloutRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtCalloutRule.cs
+END
+MsofbtTextbox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtTextbox.cs
+END
+MsofbtArcRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtArcRule.cs
+END
+EscherRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/EscherRecord.cs
+END
+MsofbtCLSID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtCLSID.cs
+END
+MsofbtDgg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/45/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtDgg.cs
+END
+MsofbtBlipBitmapDIB.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipBitmapDIB.cs
+END
+MsofbtDggContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtDggContainer.cs
+END
+MsofbtBlipStart.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipStart.cs
+END
+MsofbtDeletedPspl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtDeletedPspl.cs
+END
+MsofbtClientRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtClientRule.cs
+END
+MsofbtBlipMetafileWMF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBlipMetafileWMF.cs
+END
+MsofbtClientAnchor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtClientAnchor.cs
+END
+MsofbtBSE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtBSE.cs
+END
+MsofbtAnchor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtAnchor.cs
+END
+MsofbtSpgr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSpgr.cs
+END
+MsofbtChildAnchor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtChildAnchor.cs
+END
+MsofbtSpgrContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSpgrContainer.cs
+END
+MsofbtConnectorRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtConnectorRule.cs
+END
+MsofbtAlignRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtAlignRule.cs
+END
+MsofbtSpContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSpContainer.cs
+END
+MsofbtSelection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecords/MsofbtSelection.cs
+END

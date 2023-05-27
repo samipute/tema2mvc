@@ -1,0 +1,234 @@
+﻿@model AdminPanelModel
+@{
+    ViewData["Title"] = "Admin Panel";
+}
+<!doctype html>
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+        <style>
+            td {
+                border: 1px solid #F0F0F0;
+                padding: 0 5px;
+            }
+            p {
+                margin: 20px 0 5px 0;
+            }
+            table {
+                margin-bottom: 20px;
+            }
+            div {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>@ViewData["Title"]</h1>
+        <p>Found @Model.Users.Count() users.</p>
+        <table>
+            @foreach (UserDAO user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    @if (user.UserRole == UserDAO.Role.Admin)
+                    {
+                        <td>Admin</td>
+                    }
+                    else
+                    {
+                        <td>Employee</td>
+                    }
+                    <td>
+                        <button onclick="removeUser('@user.Id.ToString()')">Delete</button>
+                    </td>
+            </tr>
+            }
+        </table>
+        <div>
+            <input id="userBox" type="text" placeholder="Name" />
+            <input name="adminBox" id="adminBox" type="checkbox" />
+            <label for="adminBox">Admin</label>
+            <button onclick="addUser()" style="margin-left: 10px">Add user</button>
+        </div>
+
+        <p>Found @Model.MenuItems.Count() items on the menu.</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+            @foreach (MenuItemDAO menuItem in Model.MenuItems)
+            {
+                <tr data-id="@menuItem.Id.ToString()">
+                    <td>
+                        <input name="itemName" value="@menuItem.Name" />
+                    </td>
+                    <td>
+                        <input name="itemStock" value="@menuItem.Stock" />
+                    </td>
+                    <td>
+                        <input name="itemPrice" value="@menuItem.Price" />
+                    </td>
+                    <td>
+                        <button onclick="updateMenuItem('@menuItem.Id.ToString()')">Update</button>
+                    </td>
+                    <td>
+                        <button onclick="deleteMenuItem('@menuItem.Id.ToString()')">Delete</button>
+                    </td>
+                </tr>
+            }
+        </table>
+        <div>
+            <input id="menuItemBox" type="text" placeholder="Menu item name" />
+            <input id="menuItemStock" type="number" placeholder="Stock" />
+            <input id="menuItemPrice" type="number" placeholder="Price" />
+            <button onclick="addMenuItem()">Add menu item</button>
+        </div>
+
+        <div>
+            <div>
+                <p>Statistics:</p>
+                <p>Select two dates:</p>
+                <input id="startDate" type="date" placeholder="Start date" />
+                <input id="endDate" type="date" placeholder="End date" />
+                <button onclick="showStats()">Show</button>
+            </div>
+            @if (Model.Statistics is not null)
+            {
+                <div>
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Items</th>
+                        </tr>
+                        @foreach (var order in Model.Statistics.Orders)
+                        {
+                            <tr>
+                                <td>@order.Time</td>
+                                <td>@order.Items.Count()</td>
+                            </tr>
+                        }
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Item name</th>
+                            <th>Total order count</th>
+                        </tr>
+                        @foreach (var menuItem in Model.Statistics.MostOrdered)
+                        {
+                            <tr>
+                                <td>@menuItem.Key</td>
+                                <td>@menuItem.Value</td>
+                            </tr>
+                        }
+                    </table>
+                    @{
+                        long startDate = (long)ViewData["startDate"]!;
+                        long endDate = (long)ViewData["endDate"]!;
+                    }
+                    <p><a href="/admin/downloadreport?start=@startDate&end=@endDate">Download XML</a></p>
+                </div>
+            }
+        </div>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            function addUser() {
+                let name = $("#userBox").val();
+                let admin = $("#adminBox").is(":checked");
+                $.ajax({
+                    url: "/admin/adduser",
+                    type: "post",
+                    dataType: "json",
+                    data: { name: name, admin: admin },
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function removeUser(id) {
+                $.ajax({
+                    url: "/admin/removeuser",
+                    type: "delete",
+                    dataType: "json",
+                    data: { id },
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function addMenuItem() {
+                let name = $("#menuItemBox").val();
+                let stock = $("#menuItemStock").val();
+                let price = $("#menuItemPrice").val();
+                $.ajax({
+                    url: "/admin/additem",
+                    type: "post",
+                    dataType: "json",
+                    data: { name, stock, price },
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function getItem(id) {
+                let row = $(`[data-id=${id}]`);
+                let name = row.find(`[name="itemName"]`).val();
+                let stock = row.find(`[name="itemStock"]`).val();
+                let price = row.find(`[name="itemPrice"]`).val();
+                return { name, stock, price };
+            }
+
+            function updateMenuItem(id) {
+                let item = getItem(id);
+                $.ajax({
+                    url: "/admin/updateitem",
+                    type: "patch",
+                    dataType: "json",
+                    data: {
+                        id: id,
+                        name: item.name,
+                        stock: item.stock,
+                        price: item.price
+                    },
+                    success: function(data) {
+                        window.location.reload();
+                    },
+                    error: function(data) {
+                        console.log("Could not find item");
+                    }
+                });
+            }
+
+            function deleteMenuItem(id) {
+                $.ajax({
+                    url: `/admin/removeitem?id=${id}`,
+                    type: "delete",
+                    success: function(data) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+            function showStats() {
+                let start = $("#startDate").val();
+                let end = $("#endDate").val();
+
+                if (start === '' || end === '')
+                    return;
+
+                let startDateSplit = start.split('-');
+                let startDate = new Date(startDateSplit[0], startDateSplit[1] - 1, startDateSplit[2]);
+                let endDateSplit = end.split('-');
+                let endDate = new Date(endDateSplit[0], endDateSplit[1] - 1, endDateSplit[2]);
+
+                window.location.href = `/admin/showreport?start=${startDate.getTime()}&end=${endDate.getTime()}`;
+            }
+        </script>
+    </body>
+</html>
+

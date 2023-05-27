@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/56/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat
+END
+ShortSectorAllocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/ShortSectorAllocation.cs
+END
+SectorAllocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/SectorAllocation.cs
+END
+DirectoryEntry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/DirectoryEntry.cs
+END
+FileHeader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/FileHeader.cs
+END
+CompoundFileHeader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/CompoundFileHeader.cs
+END
+ByteOrderMarks.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/ByteOrderMarks.cs
+END
+CompoundDocument_Write.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/CompoundDocument_Write.cs
+END
+CompoundDocument_Read.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/47/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/CompoundDocument_Read.cs
+END
+SID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/SID.cs
+END
+MasterSectorAllocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/41/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/MasterSectorAllocation.cs
+END
+CompoundDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/56/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/CompoundDocument.cs
+END
+EntryType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/EntryType.cs
+END
+DirectoryTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/DirectoryTree.cs
+END
+NodeColor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/CompoundDocumentFormat/NodeColor.cs
+END

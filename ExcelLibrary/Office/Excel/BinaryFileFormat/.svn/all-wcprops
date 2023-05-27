@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/52/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat
+END
+SubRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/SubRecord.cs
+END
+ColorPalette.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/40/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/ColorPalette.cs
+END
+Record.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/35/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Record.cs
+END
+SharedResource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/37/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/SharedResource.cs
+END
+RichTextFormat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/35/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/RichTextFormat.cs
+END
+CellFormatCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/29/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/CellFormatCollection.cs
+END

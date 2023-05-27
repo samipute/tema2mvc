@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tema2mvc.props" />
+</Project>

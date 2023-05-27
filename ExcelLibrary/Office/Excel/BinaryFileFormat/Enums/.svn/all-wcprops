@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/45/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Enums
+END
+SubRecordType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Enums/SubRecordType.cs
+END
+StreamType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Enums/StreamType.cs
+END
+RecordType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/45/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Enums/RecordType.cs
+END
+ErrorCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/29/trunk/src/ExcelLibrary/Office/Excel/BinaryFileFormat/Enums/ErrorCode.cs
+END

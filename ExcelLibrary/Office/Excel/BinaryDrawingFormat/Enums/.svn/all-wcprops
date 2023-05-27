@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums
+END
+ShapeType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/ShapeType.cs
+END
+PropertyIDs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/PropertyIDs.cs
+END
+BlipType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/BlipType.cs
+END
+BlipSignature.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/BlipSignature.cs
+END
+EscherRecordType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/EscherRecordType.cs
+END
+ShapeFlag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/Enums/ShapeFlag.cs
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/45/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat
+END
+ShapeProperty.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/ShapeProperty.cs
+END
+EscherRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/28/trunk/src/ExcelLibrary/Office/Excel/BinaryDrawingFormat/EscherRecord.cs
+END

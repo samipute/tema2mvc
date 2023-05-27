@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/36/trunk/src/ExcelLibrary/CodeLib
+END
+FastSearchList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/36/trunk/src/ExcelLibrary/CodeLib/FastSearchList.cs
+END
+FileSelector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/FileSelector.cs
+END
+Algorithm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/Algorithm.cs
+END
+FileIO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/FileIO.cs
+END
+TextEncoding.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/TextEncoding.cs
+END
+StreamHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/StreamHelper.cs
+END
+Pair.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/18/trunk/src/ExcelLibrary/CodeLib/Pair.cs
+END
